@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-    <h1> hello!!! </h1>
-</body>
+{% include 'head.html' %}
+
+    {% include 'header.html' %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% include 'footer.html' %}
 </html>
